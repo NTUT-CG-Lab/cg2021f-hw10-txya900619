@@ -118,7 +118,7 @@ class threejsViewer {
 
         texture.format = THREE.LuminanceFormat;
         texture.type = THREE.UnsignedByteType;
-        texture.minFilter = texture.maxFilter = THREE.LinearFilter;
+        texture.minFilter = texture.magFilter = THREE.LinearFilter;
 
         let cmtextures = new THREE.DataTexture(colormap, 256, 1);
 
